@@ -37,7 +37,7 @@ for profile in profiles:
         ready_ids.add(profile["dynata_id"])
         week_range = (today - datetime.timedelta(days=7)).strftime("%B %-d") + " - " + today.strftime("%B %-d")
         reports[profile["dynata_id"]] = {"report_ready": True, "city": profile["city"], "week_range": week_range,
-                                         "followup_start": "hello", "followup_end": "goodbye", "total_listings": 0,
+                                         "followup_start": "[start]", "followup_end": "[end]", "total_listings": 0,
                                          "contacted": 0, "responses": 0, "avg_rent": 0, "private_bathroom_pct": 0,
                                          "below_r_pct": 0, "above_r_pct": 0, "rents": []}
 
